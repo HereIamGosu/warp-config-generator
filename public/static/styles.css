@@ -1,41 +1,14 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-}
-
-.container {
-    max-width: 90%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-}
-
-img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 button {
     width: 100%;
+    margin-bottom: 20px;
     padding: 12px 24px;
     font-size: 18px;
     font-weight: bold;
-    text-transform: uppercase;
     color: white;
-    background: linear-gradient(90deg, #eeac43, #f15874);
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    background: linear-gradient(90deg, #eeac43, #f15874);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -84,21 +57,5 @@ button.button--loading {
 }
 
 #githubButton {
-    background-color: #333;
-}
-
-#status {
-    margin-top: 20px;
-    color: red;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    background-color: black;
 }
