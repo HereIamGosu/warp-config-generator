@@ -1,3 +1,4 @@
+/* Основные стили страницы */
 body {
     display: flex;
     justify-content: center;
@@ -6,32 +7,79 @@ body {
     margin: 0;
     background-color: #f4f4f4;
     font-family: 'Roboto', sans-serif;
+    color: #333;
 }
+
 .container {
     max-width: 95%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
+
 img {
-    max-width: 400px;
+    max-width: 100%;
+    margin-bottom: 20px;
 }
+
+/* Кнопки */
 button {
     width: 100%;
     margin-bottom: 20px;
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 18px;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
 }
 
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Кнопка генерации конфигурации */
+#generateButton {
+    background: linear-gradient(90deg, #2ecc71, #00bcd4);
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.2), 0 6px 20px rgba(0, 188, 212, 0.2);
+}
+
+#generateButton:hover {
+    background: linear-gradient(90deg, #27ae60, #0097a7);
+}
+
+/* Кнопка скачивания файла */
+#schedulerButton {
+    background-color: #f15874;
+    box-shadow: 0 4px 8px rgba(241, 88, 116, 0.2);
+}
+
+#schedulerButton:hover {
+    background-color: #e14e65;
+}
+
+/* Индикатор загрузки */
 .button--loading::after {
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     border: solid rgba(0, 0, 0, 0.1);
     border-top-color: #f15874;
     border-radius: 50%;
@@ -47,24 +95,16 @@ button.button--loading {
     display: none;
 }
 
-#generateButton {
-    background: linear-gradient(90deg, #2ecc71, #00bcd4); /* Изумрудный и голубой */
-}
-#schedulerButton {
-    border: solid rgba(0, 0, 0, 0.1);
-    border-top-color: #f15874;
-}
-button:disabled {
-    cursor: not-allowed;
-    opacity: 0.7;
-}
-
+/* Анимация вращения */
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
+/* Статус ошибки */
 #status {
     margin-bottom: 20px;
-    color: red;
+    color: #f15874;
+    font-size: 16px;
+    font-weight: bold;
 }
