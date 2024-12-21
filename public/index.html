@@ -13,10 +13,20 @@
 <div class="container">
     <img src="/static/logo.svg" alt="Логотип">
     <div id="status"></div>
+
+    <!-- Кнопка генерации конфигурации -->
     <button id="generateButton"><span class="button__text">Сгенерировать</span></button>
-<!--     <button id="telegramButton"><span class="button__text">Telegram канал</span></button> -->
-<!--     <button id="githubButton"><span class="button__text">GitHub репозиторий</span></button> -->
-<!--     <div id="info">Пожалуйста, поддержите меня на GitHub, поставив звезду.</div> -->
+
+    <!-- Кнопка для скачивания файла планировщика -->
+    <button id="schedulerButton">
+        <span class="button__text">Скачать файл планировщика</span>
+    </button>
 </div>
+
+<script>
+    document.getElementById('schedulerButton').onclick = function() {
+        window.location.href = 'https://github.com/HereIamGosu/warp-config-generator/blob/main/SchedulerAmnezia.bat';
+    };
+</script>
 </body>
 </html>
