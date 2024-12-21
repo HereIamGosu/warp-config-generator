@@ -10,6 +10,7 @@ body {
     color: #333;
 }
 
+/* Контейнер с кнопками */
 .container {
     max-width: 95%;
     width: 400px;
@@ -23,6 +24,7 @@ body {
     border-radius: 10px;
 }
 
+/* Картинка */
 img {
     max-width: 100%;
     margin-bottom: 20px;
@@ -107,4 +109,39 @@ button.button--loading {
     color: #f15874;
     font-size: 16px;
     font-weight: bold;
+}
+
+/* Стили для инструкции справа */
+.instruction {
+    margin-left: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 350px;
+    text-align: left;
+}
+
+.instruction h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.instruction ol {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.instruction a {
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+.instruction a:hover {
+    text-decoration: underline;
+}
+
+.instruction p {
+    font-size: 16px;
+    margin-top: 10px;
 }
