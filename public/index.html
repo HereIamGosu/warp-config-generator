@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="/static/styles.css">
     <script defer src="/static/script.js"></script>
     <script defer src="/_vercel/insights/script.js"></script>
+    <style>
+        /* Стили для благодарности внизу страницы */
+        .thank-you {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            color: #B0B0B0; /* бледно-серый цвет */
+            text-align: center;
+        }
+
+        .thank-you a {
+            color: #B0B0B0; /* цвет ссылки такой же, как и текст */
+            text-decoration: none;
+        }
+
+        .thank-you a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -38,6 +59,11 @@
         </li>
     </ol>
     <p>Теперь AmneziaWG будет автоматически подключаться к нужной конфигурации при каждом входе в систему. 🚀</p>
+</div>
+
+<!-- Текст благодарности внизу страницы -->
+<div class="thank-you">
+    Отдельное спасибо юзеру <a href="https://github.com/llimonix" target="_blank">@llimonix</a>, у которого я спёр задумку деплоя на Vercel и часть кода. Опенсорс тебя не забудет!
 </div>
 
 <script>
