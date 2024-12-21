@@ -26,7 +26,7 @@ async function generateConfig() {
                 link.click();
             };
 
-            button_text.textContent = `Скачать warp_llimonix_${formattedDate}.conf`; // Используем текущую дату
+            button_text.textContent = `Скачать AmneziaWarp_${formattedDate}.conf`; // Используем текущую дату
             button.onclick = downloadFile;
             downloadFile();
         } else {
