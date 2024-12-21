@@ -145,3 +145,22 @@ button.button--loading {
     font-size: 16px;
     margin-top: 10px;
 }
+
+.thank-you {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            color: #B0B0B0; /* бледно-серый цвет */
+            text-align: center;
+        }
+
+        .thank-you a {
+            color: #B0B0B0; /* цвет ссылки такой же, как и текст */
+            text-decoration: none;
+        }
+
+        .thank-you a:hover {
+            text-decoration: underline;
+        }
