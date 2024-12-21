@@ -51,7 +51,8 @@ button.button--loading {
     background: linear-gradient(90deg, #2ecc71, #00bcd4); /* Изумрудный и голубой */
 }
 #schedulerButton {
-    background: linear-gradient(90deg, #2a3797, #0d87d2);
+    border: solid rgba(0, 0, 0, 0.1);
+    border-top-color: #f15874;
 }
 button:disabled {
     cursor: not-allowed;
