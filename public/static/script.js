@@ -3,13 +3,6 @@ async function generateConfig() {
     const button_text = document.querySelector('#generateButton .button__text');
     const status = document.getElementById('status');
     
-    // Получаем текущую дату в формате "DD.MM.YYYY"
-    const currentDate = new Date();
-    const day = String(currentDate.getDate()).padStart(2, '0');
-    const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Месяцы начинаются с 0
-    const year = currentDate.getFullYear();
-    const formattedDate = `${day}.${month}.${year}`; // Форматируем дату как "22.12.2024"
-
     // Изменяем состояние кнопки на загрузку
     button.disabled = true;
     button.classList.add("button--loading");
@@ -22,11 +15,11 @@ async function generateConfig() {
             const downloadFile = () => {
                 const link = document.createElement('a');
                 link.href = 'data:text/plain;base64,' + data.content;
-                link.download = `AmneziaWarp_${formattedDate}.conf`; // Используем текущую дату
+                link.download = "AmneziaWarp.conf"; // Без даты в имени файла
                 link.click();
             };
 
-            button_text.textContent = `Скачать AmneziaWarp_${formattedDate}.conf`; // Используем текущую дату
+            button_text.textContent = 'Скачать AmneziaWarp.conf'; // Текст кнопки без даты
             button.onclick = downloadFile;
             downloadFile();
         } else {
